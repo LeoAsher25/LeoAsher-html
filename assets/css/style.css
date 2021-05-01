@@ -247,7 +247,19 @@ body {
     box-shadow: 0 10px 10px 1px rgba(0, 0, 0, .4);
     padding: 1rem 3% 1rem 5%;
     position: relative;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
     overflow-x: hidden;
+}
+
+.header__nav.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .header__nav::before {

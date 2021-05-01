@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <meta property="og:image" content="./assets/img/leo.jpg" />
+    <meta property="og:title" content="It's me, Leo Asher" />
+    <meta property="og:description" content="Come in to know more about me!" />
+
 </head>
 
 <body>
@@ -126,6 +130,12 @@
                     <a href="#contact" class="header__nav__item"><span>Contact</span></a>
                 </div>
             </nav>
+            <script type="text/javascript">
+                window.addEventListener('scroll', () => {
+                    var fixNavbar = document.getElementById('header__nav');
+                    fixNavbar.classList.toggle("active", window.scrollY > innerHeight)
+                })
+            </script>
         </div>
 
         <div id="body">
