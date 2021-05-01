@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Asher</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responesive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <a href="#container" class="back-to-top" title="Back to Top">
+            <img src="./assets/img/logo.png" alt="Logo" srcset="">
+        </a>
+        <script type="text/javascript">
+            window.addEventListener('scroll', () => {
+                var backToTop = document.querySelector('.back-to-top');
+                backToTop.classList.toggle("active", window.scrollY > 730)
+            })
+        </script>
+
+        <div id="header ">
+            <div class="header__intro ">
+                <div class="header__intro__header">
+                    <span class="header__corner header__corner-top-left--out">
+                        <span class="header__corner header__corner-top-left--in">
+                        </span>
+                    </span>
+                    <span class="header__corner header__corner-top-right--out">
+                        <span class="header__corner header__corner-top-right--in">
+                        </span>
+                    </span>
+                </div>
+                <div class="header__intro__content">
+                    <div class="header__intro__title">
+                        Hello, I'm Leo Asher
+                    </div>
+                    <div class="header__intro__disc ">
+                        <!-- The most blessed lion🙂 -->
+                        <span class="typing"></span>
+                    </div>
+
+                </div>
+                <div class="header__intro__footer">
+                    <span class="header__corner header__corner-bottom-left--out">
+                        <span class="header__corner header__corner-bottom-left--in">
+                        </span>
+                    </span>
+                    <span class="header__corner header__corner-bottom-right--out">
+                        <span class="header__corner header__corner-bottom-right--in">
+                        </span>
+                    </span>
+                    <a href="#header__nav" class="header__intro__scroll">
+                        <span style="--i: .0s"></span>
+                        <span style="--i: .2s"></span>
+                        <span style="--i: .4s"></span>
+                    </a>
+                </div>
+
+            </div>
+            <nav class="header__nav row" id="header__nav">
+                <a href="#" class="header__nav__logo">
+                    <img src="./assets/img/logo.png" alt="LeoAsher" class="header__nav__logo-img" style="width:6rem;">
+                    <div class="header__nav__logo-title">Leo Asher</div>
+                </a>
+                <div class="header__nav--respon">
+                    <input type="checkbox" hidden id="nav--respon-checkbox">
+                    <label for="nav--respon-checkbox" class="overlay header__nav--respon__overlay"></label>
+                    <label for="nav--respon-checkbox" class="header__nav--respon__icon">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <div class="header__nav--respon__menu">
+                        <div class="header__nav--respon__menu__header">
+                            <div class="header__nav--respon__logo">
+                                <img src="./assets/img/logo.png" alt="LeoAsher" class="header__nav__logo-img" style="width:6rem;">
+                                <div class="header__nav--respon__logo-title">Leo Asher</div>
+                            </div>
+                            <label for="nav--respon-checkbox" class="header__nav--respon__menu__close fas fa-times">
+                            </label>
+                        </div>
+                        <div class="header__nav--respon__menu__list">
+                            <a href="#" class="header__nav--respon__item">
+                                <span>
+                                    <i class="fas fa-home"></i>Home
+                                </span>
+                            </a>
+                            <a href="#my-hobbies" class="header__nav--respon__item">
+                                <span>
+                                    <i class="fas fa-gamepad"></i>Hobbies
+                                </span>
+                            </a>
+                            <a href="#" class="header__nav--respon__item">
+                                <span>
+                                    <i class="fas fa-users"></i>Family
+                                </span>
+                            </a>
+                            <a href="#" class="header__nav--respon__item">
+                                <span>
+                                    <i class="far fa-images"></i>Images
+                                </span>
+                            </a>
+                            <a href="#contact" class="header__nav--respon__item">
+                                <span>
+                                    <i class="far fa-id-card"></i>>Contact
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__nav__menu">
+                    <!-- <a href="#" class="header__nav__item"><span>Home</span></a> -->
+                    <a href="#my-hobbies" class="header__nav__item"><span>Hobbies</span></a>
+                    <a href="#" class="header__nav__item"><span>Family</span></a>
+                    <a href="#" class="header__nav__item"><span>Images</span></a>
+                    <a href="#contact" class="header__nav__item"><span>Contact</span></a>
+                </div>
+            </nav>
+        </div>
+
+        <div id="body">
+            <!--
+                Some info of Leo Asher 
+            -->
+            <section class="my-info home-section" id="home__my-info">
+                <div class="my-info__img">
+                    <img src="./assets/img/leo1.jpg" alt="Leo Asher">
+                </div>
+                <div class="my-info__content">
+                    <div class="my-info__title-hello">&nbsp;Hello</div>
+                    <h2 class="home-section-heading my-infor-heading">
+                        About me
+                        <br>
+                        <span class="typing-1"></span>
+                    </h2>
+                    <div class="my-info__dis row">
+                        <div class="col l-6 m-6 c-12">
+                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Birth Name: <span>Nguyễn Văn Hậu</span> </div>
+                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Nickname: <span>Leo Asher</span></div>
+                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Date of Birth: <span>25-07-2001</span> </div>
+                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Relationship status: <span>Single</span></div>
+                        </div>
+                        <div class="col l-6 m-6 c-12">
+                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Nationality: <span>Vietnam</span></div>
+                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Job: <span>Student at PTIT</span></div>
+                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Hometown: <span>Kim Sơn, Ninh Bình</span> </div>
+                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Address: <span>Trung Văn, Nam Từ Liêm, Hà Nội</span> </div>
+                        </div>
+                        <div class="infor-item infor-quick-des"> <i class="far fa-dot-circle"></i>Description: <span>I'm outgoing but quite humorless, and in my opinion, I'm really a optimist.</span> </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- My skill -->
+
+
+            <!--    My hobbies  -->
+            <section class="my-hobbies home-section grid" id="my-hobbies">
+                <h2 class=" my-hobbies__heading home-section-heading">
+                    My hobbies<br>
+                    <span class="typing-2"></span>
+                </h2>
+                <ul class="my-hobbies__list row">
+                    <li class="col l-3 m-6 c-12 my-hobbies__item">
+                        <div class="my-hobbies-wrap">
+                            <img src="./assets/img/coding.jpg" style="background-image: url();">
+                        </div>
+                        <span class="my-hobbies-name">Coding</span>
+                    </li>
+                    <li class="col l-3 m-6 c-12 my-hobbies__item">
+                        <div class="my-hobbies-wrap">
+                            <img src="./assets/img/traveling.jfif" style="background-image: url();">
+                        </div>
+                        <span class="my-hobbies-name">Traveling</span>
+                    </li>
+                    <li class="col l-3 m-6 c-12 my-hobbies__item">
+                        <div class="my-hobbies-wrap">
+                            <img src="./assets/img/sleeping.jfif" style="background-image: url();">
+                        </div>
+                        <span class="my-hobbies-name">Sleeping</span>
+                    </li>
+                    <li class="col l-3 m-6 c-12 my-hobbies__item">
+                        <div class="my-hobbies-wrap">
+                            <img src="./assets/img/lolGame.jpg" style="background-image: url();">
+                        </div>
+                        <span class="my-hobbies-name">ESport</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contact home-section grid" id="contact">
+                <h2 class="contact__heading home-section-heading">
+                    Contact me<br>
+                    <span class="typing-3"></span>
+                </h2>
+                <div class="contact-wrap row">
+                    <div class="col l-6 c-12 contact-infor">
+                        <h3 class="contact-infor__heading">
+                            Get in Touch with me
+                        </h3>
+                        <div class="contact-name">You can call me
+                            <span class="typing-4"></span>
+                        </div>
+                        <p class="contact-phone">Phone:
+                            <span>0342 828 391</span>
+                        </p>
+                        <p class="contact-email">Email &ThinSpace;:
+                            <span>leoasher2507@gmail.com</span>
+                        </p>
+                        <div class="contact-social-network">
+                            <a href="http://fb.com/LeoAsher25" target="_blank" class="contact-social-network__item">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="http://fb.com/LeoAsher25" target="_blank" class="contact-social-network__item">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 c-12 contact-form">
+                        <h3 class="contact-form">
+                            Message me
+                        </h3>
+                        <form class="contact-form-wrap">
+                            <div class="contact-form-infor row">
+                                <div class="col l-6 m-6 c-12 contact-form-name">
+                                    <input required type="text" placeholder="Name" name="name">
+                                </div>
+                                <div class="col l-6 m-6 c-12 contact-form-email">
+                                    <input required type="text" placeholder="Email" name="email">
+                                </div>
+                            </div>
+                            <textarea name="message" id="" rows="3" placeholder="Message" class="contact-form-msg"></textarea>
+                            <button class="btn">Send</button>
+                        </form>
+                    </div>
+            </section>
+
+
+            </div>
+
+        </div>
+        <div class="footer grid">
+
+        </div>
+        <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+@media (max-width:1023px) {
+    .my-info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+    }
+    .header__nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header__nav__menu {
+        display: none;
+    }
+    .home-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 740px) {
+    .my-info {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .home-section {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__nav--respon {
+        display: none;
+    }
+}
