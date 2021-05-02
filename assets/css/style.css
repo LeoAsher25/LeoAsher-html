@@ -465,6 +465,10 @@ body {
     position: relative;
 }
 
+#body.active {
+    margin-top: 18rem;
+}
+
 .home-section-heading span {
     position: relative;
     top: -1.5rem;

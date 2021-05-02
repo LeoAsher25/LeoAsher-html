@@ -30,7 +30,7 @@
         <script type="text/javascript">
             window.addEventListener('scroll', () => {
                 var backToTop = document.querySelector('.back-to-top');
-                backToTop.classList.toggle("active", window.scrollY > 730)
+                backToTop.classList.toggle("active", window.scrollY > innerHeight)
             })
         </script>
 
@@ -134,6 +134,9 @@
                 window.addEventListener('scroll', () => {
                     var fixNavbar = document.getElementById('header__nav');
                     fixNavbar.classList.toggle("active", window.scrollY > innerHeight)
+                    var newInforSection = document.getElementById('body');
+                    newInforSection.classList.toggle("active", window.scrollY > innerHeight);
+
                 })
             </script>
         </div>
