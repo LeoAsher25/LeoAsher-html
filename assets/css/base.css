@@ -55,6 +55,19 @@
     padding-top: 10rem;
 }
 
+.home-section:nth-of-type(2n+1) {
+    background-color: #212121;
+}
+
+.home-section-heading {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: var(--btn-color);
+    position: relative;
+}
+
 .home-section-heading span {
     position: relative;
     top: -1.5rem;

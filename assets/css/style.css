@@ -453,15 +453,6 @@ body {
 
 #body {}
 
-.home-section-heading {
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    font-size: 4rem;
-    color: var(--btn-color);
-    position: relative;
-}
-
 .my-infor {
     padding: 0;
     display: flex;
@@ -469,11 +460,15 @@ body {
     /* margin-top: 4rem; */
 }
 
+.my-infor * {
+    color: rgba(255, 255, 255, .9);
+}
+
 .my-infor.active {
     padding-top: 8rem;
 }
 
-.my-info__img {
+.my-infor__img {
     width: 30rem;
     align-self: center;
     display: flex;
@@ -481,29 +476,28 @@ body {
     overflow: hidden;
 }
 
-.my-info__img img {
+.my-infor__img img {
     margin: auto;
     width: 100%;
 }
 
-.my-info__content {
+.my-infor__content {
     position: relative;
     margin-left: 5rem;
     flex: 1;
 }
 
-.my-info__title {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #3D4451;
-}
-
 .my-infor-heading {
     left: -10%;
     position: relative;
+    color: var(--btn-color);
 }
 
-.my-info__title-hello {
+.my-infor-heading span {
+    color: var(--btn-color);
+}
+
+.my-infor__title-hello {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     width: 7rem;
@@ -520,7 +514,7 @@ body {
     border-bottom-left-radius: 0;
 }
 
-.my-info__title-hello:before {
+.my-infor__title-hello:before {
     content: "";
     display: block;
     position: absolute;
@@ -532,31 +526,31 @@ body {
     border-color: transparent var(--btn-color) var(--btn-color) transparent;
 }
 
-.my-info__dis {
+.my-infor__dis {
     display: flex;
     flex-wrap: wrap;
     padding-right: 3rem;
 }
 
-.my-info__dis .infor-item {
+.my-infor__dis .infor-item {
     margin-bottom: 1rem;
     font-size: 1.8rem;
     font-weight: 600;
     position: relative;
 }
 
-.my-info__dis .infor-item i {
+.my-infor__dis .infor-item i {
     color: var(--btn-color);
     border-radius: 50%;
     display: inline-block;
     margin-right: .5rem;
 }
 
-.my-info__dis .infor-item span {
+.my-infor__dis .infor-item span {
     display: block;
     margin-left: 15%;
-    font-weight: 500;
-    color: rgba(0, 0, 0, .5);
+    font-weight: 400;
+    color: rgba(255, 255, 255, .5);
 }
 
 .infor-quick-des {
@@ -608,9 +602,7 @@ body {
     font-weight: 500;
 }
 
-.contact {
-    background-color: #212121;
-}
+.contact {}
 
 .contact * {
     color: rgba(255, 255, 255, .9);
