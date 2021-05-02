@@ -51,5 +51,11 @@
     overflow: hidden;
     padding-right: 12rem;
     padding-left: 12rem;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
+    padding-top: 10rem;
+}
+
+.home-section-heading span {
+    position: relative;
+    top: -1.5rem;
 }

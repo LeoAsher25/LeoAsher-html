@@ -94,9 +94,9 @@
                             </label>
                         </div>
                         <div class="header__nav--respon__menu__list">
-                            <a href="#" class="header__nav--respon__item">
+                            <a href="#home__my-info" class="header__nav--respon__item">
                                 <span>
-                                    <i class="fas fa-home"></i>Home
+                                    <i class="fas fa-home"></i>About
                                 </span>
                             </a>
                             <a href="#my-hobbies" class="header__nav--respon__item">
@@ -123,7 +123,7 @@
                     </div>
                 </div>
                 <div class="header__nav__menu">
-                    <!-- <a href="#" class="header__nav__item"><span>Home</span></a> -->
+                    <a href="#home__my-info" class="header__nav__item"><span>About</span></a>
                     <a href="#my-hobbies" class="header__nav__item"><span>Hobbies</span></a>
                     <a href="#" class="header__nav__item"><span>Family</span></a>
                     <a href="#" class="header__nav__item"><span>Images</span></a>
@@ -134,9 +134,8 @@
                 window.addEventListener('scroll', () => {
                     var fixNavbar = document.getElementById('header__nav');
                     fixNavbar.classList.toggle("active", window.scrollY > innerHeight)
-                    var newInforSection = document.getElementById('body');
+                    var newInforSection = document.querySelector(".my-infor");
                     newInforSection.classList.toggle("active", window.scrollY > innerHeight);
-
                 })
             </script>
         </div>
@@ -145,32 +144,34 @@
             <!--
                 Some info of Leo Asher 
             -->
-            <section class="my-info home-section" id="home__my-info">
-                <div class="my-info__img">
-                    <img src="./assets/img/leo1.jpg" alt="Leo Asher">
-                </div>
-                <div class="my-info__content">
-                    <div class="my-info__title-hello">&nbsp;Hello</div>
-                    <h2 class="home-section-heading my-infor-heading">
-                        About me
-                        <br>
-                        <span class="typing-1"></span>
-                    </h2>
-                    <div class="my-info__dis row">
-                        <div class="col l-6 m-6 c-12">
-                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Birth Name: <span>Nguyễn Văn Hậu</span> </div>
-                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Nickname: <span>Leo Asher</span></div>
-                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Date of Birth: <span>25-07-2001</span> </div>
-                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Relationship status: <span>Single</span></div>
-                        </div>
-                        <div class="col l-6 m-6 c-12">
-                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Nationality: <span>Vietnam</span></div>
-                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Job: <span>Student at PTIT</span></div>
-                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Hometown: <span>Kim Sơn, Ninh Bình</span> </div>
-                            <div class="infor-item"> <i class="far fa-dot-circle"></i>Address: <span>Trung Văn, Nam Từ Liêm, Hà Nội</span> </div>
-                        </div>
-                        <div class="infor-item infor-quick-des"> <i class="far fa-dot-circle"></i>Description: <span>I'm outgoing but quite humorless, and in my opinion, I'm really a optimist.</span> </div>
+            <section id="home__my-info" class="home-section">
+                <div class="my-infor">
+                    <div class="my-info__img">
+                        <img src="./assets/img/leo1.jpg" alt="Leo Asher">
+                    </div>
+                    <div class="my-info__content">
+                        <div class="my-info__title-hello">&nbsp;Hello</div>
+                        <h2 class="home-section-heading my-infor-heading">
+                            About me
+                            <br>
+                            <span class="typing-1"></span>
+                        </h2>
+                        <div class="my-info__dis row">
+                            <div class="col l-6 m-6 c-12">
+                                <div class="infor-item"> <i class="far fa-dot-circle"></i>Birth Name: <span>Nguyễn Văn Hậu</span> </div>
+                                <div class="infor-item"> <i class="far fa-dot-circle"></i>Nickname: <span>Leo Asher</span></div>
+                                <div class="infor-item"> <i class="far fa-dot-circle"></i>Date of Birth: <span>25-07-2001</span> </div>
+                                <div class="infor-item"> <i class="far fa-dot-circle"></i>Relationship status: <span>Single</span></div>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <div class="infor-item"> <i class="far fa-dot-circle"></i>Nationality: <span>Vietnam</span></div>
+                                <div class="infor-item"> <i class="far fa-dot-circle"></i>Job: <span>Student at PTIT</span></div>
+                                <div class="infor-item"> <i class="far fa-dot-circle"></i>Hometown: <span>Kim Sơn, Ninh Bình</span> </div>
+                                <div class="infor-item"> <i class="far fa-dot-circle"></i>Address: <span>Trung Văn, Nam Từ Liêm, Hà Nội</span> </div>
+                            </div>
+                            <div class="infor-item infor-quick-des"> <i class="far fa-dot-circle"></i>Description: <span>I'm outgoing but quite humorless, and in my opinion, I'm really a optimist.</span> </div>
 
+                        </div>
                     </div>
                 </div>
             </section>

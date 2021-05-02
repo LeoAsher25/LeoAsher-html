@@ -1,5 +1,5 @@
 @media (max-width:1023px) {
-    .my-info {
+    .my-infor {
         display: flex;
         flex-direction: column;
         padding-bottom: 3rem;
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 740px) {
-    .my-info {
+    .my-infor {
         margin-left: 2%;
         margin-right: 2%;
     }
