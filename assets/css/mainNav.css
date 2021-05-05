@@ -1,9 +1,10 @@
 .header__nav {
     display: flex;
+    margin-right: 0;
     background-color: rgb(15, 1, 58);
     box-shadow: 0 10px 10px 1px rgba(0, 0, 0, .4);
     position: relative;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .header__nav.active {
@@ -48,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-left: 10%;
+    padding-left: 20rem;
 }
 
 .header__nav__item {
@@ -177,7 +178,7 @@
     color: var(--text-color1);
 }
 
-.header__nav--respon__item span {
+.header__nav--respon__item div {
     transition: .8s;
     padding: 2rem;
     padding-left: 15%;
@@ -186,7 +187,7 @@
     font-weight: 500;
 }
 
-.header__nav--respon__item span:hover {
+.header__nav--respon__item div:hover {
     background-color: rgba(0, 0, 0, .3);
 }
 

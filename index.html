@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/mainNav.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responesive.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <meta property="og:image" content="./assets/img/leo.jpg" />
@@ -52,7 +52,6 @@
                         Hello, I'm Leo Asher
                     </div>
                     <div class="header__intro__disc ">
-                        <!-- The most blessed lion🙂 -->
                         <span class="typing"></span>
                     </div>
 
@@ -96,29 +95,29 @@
                         </div>
                         <div class="header__nav--respon__menu__list">
                             <a href="#home__my-info" class="header__nav--respon__item">
-                                <span>
+                                <div>
                                     <i class="fas fa-home"></i>About
-                                </span>
+                                </div>
                             </a>
                             <a href="#my-hobbies" class="header__nav--respon__item">
-                                <span>
+                                <div>
                                     <i class="fas fa-gamepad"></i>Hobbies
-                                </span>
+                                </div>
                             </a>
                             <a href="#" class="header__nav--respon__item">
-                                <span>
+                                <div>
                                     <i class="fas fa-users"></i>Family
-                                </span>
+                                </div>
                             </a>
                             <a href="#" class="header__nav--respon__item">
-                                <span>
+                                <div>
                                     <i class="far fa-images"></i>Images
-                                </span>
+                                </div>
                             </a>
                             <a href="" class="header__nav--respon__item dark-mode">
-                                <span>
-                                    <i class="fas fa-adjust"></i>Dark mode
-                                </span>
+                                <div>
+                                    <i class="fas fa-adjust"></i><span>Dark mode</span>
+                                </div>
                             </a>
 
                         </div>
@@ -143,6 +142,12 @@
                         darkModeBtn.addEventListener("click", (e) => {
                             e.preventDefault();
                             Container.classList.toggle("dark-theme");
+                            let textNodeMode = darkModeBtn.querySelector("span");
+                            if (Container.classList.contains("dark-theme")) {
+                                textNodeMode.innerHTML = "Light Mode";
+                            } else {
+                                textNodeMode.innerHTML = "Dark Mode";
+                            }
                         });
                     })
                 </script>
@@ -171,7 +176,7 @@
                         <h2 class="home-section-heading my-infor-heading">
                             About me
                             <br>
-                            <span class="typing-1"></span>
+                            <span class="heading-question">Who I am</span>
                         </h2>
                         <div class="my-infor__dis row">
                             <div class="col l-6 m-6 c-12">
@@ -203,7 +208,7 @@
             <section class="my-hobbies home-section grid" id="my-hobbies">
                 <h2 class=" my-hobbies__heading home-section-heading">
                     My hobbies<br>
-                    <span class="typing-2"></span>
+                    <span class="heading-question">What I like</span>
                 </h2>
                 <ul class="my-hobbies__list row">
                     <li class="col l-3 m-6 c-12 my-hobbies__item">
@@ -236,7 +241,7 @@
             <section class="contact home-section grid" id="contact">
                 <h2 class="contact__heading home-section-heading">
                     Contact me<br>
-                    <span class="typing-3"></span>
+                    <span class="heading-question">How to contact me</span>
                 </h2>
                 <div class="contact-wrap row">
                     <div class="col l-6 c-12 contact-infor">

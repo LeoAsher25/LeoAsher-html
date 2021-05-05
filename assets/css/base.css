@@ -5,7 +5,7 @@
     --green-color: #00FF00;
     --blue-color: #0000FF;
     --yellow-color: #ffff00;
-    --btn-color: #7000AA;
+    --btn-color: #7000aa;
     --margin-side: 12rem;
     --light-color: #fafafa;
     --dark-color: #252525;
@@ -20,12 +20,13 @@
 
 .dark-theme {
     --theme-color: var(--dark-color);
+    --btn-color: #8e30d0;
     --text-color1: var(--light-text-color1);
     --text-color2: var(--light-text-color2);
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 80%;
     scroll-behavior: smooth;
 }
 
@@ -71,7 +72,7 @@ body {
     text-align: center;
     text-decoration: none;
     padding: .8rem 1.5rem;
-    background-color: #7000AA;
+    background-color: var(--btn-color);
     margin: 1rem;
     border-radius: .5rem;
     font-size: 1.6rem;
@@ -98,6 +99,7 @@ body {
 .home-section-heading span {
     position: relative;
     top: -1.5rem;
+    color: var(--btn-color);
 }
 
 .back-to-top {

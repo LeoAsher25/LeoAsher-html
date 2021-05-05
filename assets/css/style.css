@@ -16,19 +16,6 @@
     padding-top: 5rem;
 }
 
-.header__intro__img {
-    width: 100%;
-}
-
-.header__intro__logo {
-    width: 100%;
-    position: relative;
-    color: var(--white-color);
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3rem;
-}
-
 
 /*      CORNER TOP      */
 
@@ -92,12 +79,14 @@
 }
 
 .header__intro__title {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
     color: var(--light-text-color1);
+    margin-bottom: 1rem;
 }
 
 .header__intro__disc * {
+    font-size: 2rem;
     color: var(--light-text-color1);
 }
 
@@ -213,11 +202,33 @@
     background-color: var(--theme-color);
 }
 
+.heading-question {
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.heading-question::before {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    border-top: .2rem solid var(--btn-color);
+    top: 50%;
+    left: -2.2rem;
+}
+
+.heading-question::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    border-top: .2rem solid var(--btn-color);
+    top: 50%;
+    right: -2.3rem;
+}
+
 .my-infor {
     padding: 0;
     display: flex;
     overflow: hidden;
-    /* transition: 1s; */
 }
 
 #home__my-info {
@@ -250,11 +261,6 @@
 .my-infor-heading {
     left: -10%;
     position: relative;
-    color: var(--btn-color);
-}
-
-.my-infor-heading span {
-    color: var(--btn-color);
 }
 
 .my-infor__title-hello {
@@ -329,7 +335,6 @@
 }
 
 .my-hobbies__heading {
-    /* padding-top: 5rem; */
     margin-bottom: 5rem;
 }
 
@@ -371,16 +376,12 @@
 
 .contact {
     background-color: #202020;
+    --btn-color: #8e30d0;
 }
 
 .contact * {
     --text-color1: var(--light-text-color1);
     --text-color2: var(--light-text-color2);
-}
-
-.contact__heading,
-.contact__heading span {
-    color: var(--btn-color);
 }
 
 .contact-wrap {}
