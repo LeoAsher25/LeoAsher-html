@@ -1,0 +1,201 @@
+.header__nav {
+    display: flex;
+    background-color: rgb(15, 1, 58);
+    box-shadow: 0 10px 10px 1px rgba(0, 0, 0, .4);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header__nav.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header__nav::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    top: 0;
+    animation: lightOnOff 3s linear infinite;
+}
+
+.header__nav__logo {
+    padding-left: 3%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__nav__logo-title {
+    margin-left: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+/*      NAV__MENU       */
+
+.header__nav__menu {
+    padding-right: 3%;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10%;
+}
+
+.header__nav__item {
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header__nav__item:hover {
+    color: var(--white-color);
+    filter: brightness(150%);
+}
+
+.header__nav__item>span {
+    font-size: 2rem;
+    transition: all .2s;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.header__nav__item:hover>span {
+    font-size: 2.2rem;
+    color: var(--btn-color);
+    font-weight: 700;
+    text-shadow: 1px 2px 2px rgba(255, 255, 255, .5);
+}
+
+
+/*      HEADER__NAV--RESPON     */
+
+.header__nav--respon {
+    flex: 1;
+    position: relative;
+}
+
+.header__nav--respon__icon {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header__nav--respon__icon i {
+    display: block;
+    margin: auto;
+    font-size: 4rem;
+    color: var(--light-text-color1);
+}
+
+.header__nav--respon__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30rem;
+    background-color: var(--theme-color);
+    z-index: 10;
+    box-shadow: 0 -5px 5px 1 rgba(0, 0, 0, .1);
+    transform: translateX(30rem);
+    transition: .5s;
+}
+
+.header__nav--respon__menu__header {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 0;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.header__nav--respon__menu__header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.header__nav--respon__logo {
+    text-decoration: none;
+    display: flex;
+    transform: scale(.8);
+}
+
+.header__nav--respon__logo-title {
+    align-self: center;
+    margin-left: 0rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--btn-color);
+}
+
+.header__nav--respon__menu__close {
+    display: block;
+    align-self: center;
+    font-size: 2.5rem;
+    color: var(--text-color1);
+    cursor: pointer;
+}
+
+.header__nav--respon__menu__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav--respon__item {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__nav--respon__item i {
+    user-select: none;
+    display: inline-block;
+    margin-right: 2rem;
+    transform: scale(1.5);
+    color: var(--text-color1);
+}
+
+.header__nav--respon__item span {
+    transition: .8s;
+    padding: 2rem;
+    padding-left: 15%;
+    display: block;
+    color: var(--text-color1);
+    font-weight: 500;
+}
+
+.header__nav--respon__item span:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#nav--respon-checkbox:checked~.header__nav--respon__overlay {
+    display: block;
+    animation: layoutOn .5s linear forwards;
+}
+
+#nav--respon-checkbox:checked~.header__nav--respon__menu {
+    transform: translateX(0rem);
+    transition: transform .5s;
+}

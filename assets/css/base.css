@@ -1,5 +1,5 @@
 :root {
-    --text-color: rgba(0, 0, 0, .8);
+    /* --text-color: rgba(0, 0, 0, .8); */
     --white-color: #fff;
     --red-color: #ff0000;
     --green-color: #00FF00;
@@ -7,14 +7,43 @@
     --yellow-color: #ffff00;
     --btn-color: #7000AA;
     --margin-side: 12rem;
+    --light-color: #fafafa;
+    --dark-color: #252525;
+    --light-text-color1: #fafafa;
+    --light-text-color2: #9a9a9a;
+    --dark-text-color1: #202020;
+    --dark-text-color2: #707070;
+    --theme-color: var(--light-color);
+    --text-color1: var(--dark-text-color1);
+    --text-color2: var(--dark-text-color2);
+}
+
+.dark-theme {
+    --theme-color: var(--dark-color);
+    --text-color1: var(--light-text-color1);
+    --text-color2: var(--light-text-color2);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
 }
 
 * {
+    transition: all .3s;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-size: 1.6rem;
     font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color1);
 }
 
 .overlay {
@@ -38,6 +67,9 @@
 }
 
 .btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
     padding: .8rem 1.5rem;
     background-color: #7000AA;
     margin: 1rem;
@@ -51,12 +83,7 @@
     overflow: hidden;
     padding-right: 12rem;
     padding-left: 12rem;
-    /* margin-top: 10rem; */
     padding-top: 10rem;
-}
-
-.home-section:nth-of-type(2n+1) {
-    background-color: #212121;
 }
 
 .home-section-heading {
@@ -71,4 +98,26 @@
 .home-section-heading span {
     position: relative;
     top: -1.5rem;
+}
+
+.back-to-top {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    position: fixed;
+    right: 1rem;
+    bottom: -20rem;
+    z-index: 1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.back-to-top.active {
+    bottom: 3rem;
+    opacity: 1;
+}
+
+.back-to-top img {
+    width: 100%;
 }

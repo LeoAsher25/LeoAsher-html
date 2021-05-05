@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/mainNav.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responesive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,7 +23,7 @@
 </head>
 
 <body>
-    <div id="container">
+    <div id="container" class="dark-theme">
 
         <a href="#container" class="back-to-top" title="Back to Top">
             <img src="./assets/img/logo.png" alt="Logo" srcset="">
@@ -114,11 +115,12 @@
                                     <i class="far fa-images"></i>Images
                                 </span>
                             </a>
-                            <a href="#contact" class="header__nav--respon__item">
+                            <a href="" class="header__nav--respon__item dark-mode">
                                 <span>
-                                    <i class="far fa-id-card"></i>>Contact
+                                    <i class="fas fa-adjust"></i>Dark mode
                                 </span>
                             </a>
+
                         </div>
                     </div>
                 </div>
@@ -127,14 +129,29 @@
                     <a href="#my-hobbies" class="header__nav__item"><span>Hobbies</span></a>
                     <a href="#" class="header__nav__item"><span>Family</span></a>
                     <a href="#" class="header__nav__item"><span>Images</span></a>
-                    <a href="#contact" class="header__nav__item"><span>Contact</span></a>
+                    <a href="#" class="header__nav__item dark-mode"><span>Dark Mode</span></a>
+                    <!-- <a href="#contact" class="header__nav__item"><span>Contact</span></a> -->
                 </div>
+
+                <script type="text/javascript">
+                    let Container = document.querySelector('#container')
+                    let darkModeBtnNodes = document.querySelectorAll('.dark-mode');
+                    console.log(darkModeBtnNodes)
+                    let darkModeBtns = Array(...darkModeBtnNodes);
+                    console.log(darkModeBtns);
+                    darkModeBtns.forEach(darkModeBtn => {
+                        darkModeBtn.addEventListener("click", (e) => {
+                            e.preventDefault();
+                            Container.classList.toggle("dark-theme");
+                        });
+                    })
+                </script>
             </nav>
             <script type="text/javascript">
                 window.addEventListener('scroll', () => {
                     var fixNavbar = document.getElementById('header__nav');
                     fixNavbar.classList.toggle("active", window.scrollY > innerHeight)
-                    var newInforSection = document.querySelector(".my-infor");
+                    var newInforSection = document.querySelector("#home__my-info");
                     newInforSection.classList.toggle("active", window.scrollY > innerHeight);
                 })
             </script>
@@ -162,14 +179,16 @@
                                 <div class="infor-item"> <i class="far fa-dot-circle"></i>Nickname: <span>Leo Asher</span></div>
                                 <div class="infor-item"> <i class="far fa-dot-circle"></i>Date of Birth: <span>25-07-2001</span> </div>
                                 <div class="infor-item"> <i class="far fa-dot-circle"></i>Relationship status: <span>Single</span></div>
+                                <div class="infor-item infor-quick-des"> <i class="far fa-dot-circle"></i>Description: <span>I'm outgoing but quite humorless, and in my opinion, I'm really a optimist.</span> </div>
                             </div>
                             <div class="col l-6 m-6 c-12">
                                 <div class="infor-item"> <i class="far fa-dot-circle"></i>Nationality: <span>Vietnam</span></div>
                                 <div class="infor-item"> <i class="far fa-dot-circle"></i>Job: <span>Student at PTIT</span></div>
                                 <div class="infor-item"> <i class="far fa-dot-circle"></i>Hometown: <span>Kim Sơn, Ninh Bình</span> </div>
                                 <div class="infor-item"> <i class="far fa-dot-circle"></i>Address: <span>Trung Văn, Nam Từ Liêm, Hà Nội</span> </div>
+                                <a href="#contact" class="contact-me btn">Contact me</a>
                             </div>
-                            <div class="infor-item infor-quick-des"> <i class="far fa-dot-circle"></i>Description: <span>I'm outgoing but quite humorless, and in my opinion, I'm really a optimist.</span> </div>
+
 
                         </div>
                     </div>
