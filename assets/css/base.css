@@ -38,6 +38,7 @@ body {
 }
 
 * {
+    -webkit-tap-highlight-color: transparent;
     transition: all .3s;
     box-sizing: border-box;
     padding: 0;

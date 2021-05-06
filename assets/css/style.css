@@ -203,7 +203,6 @@
 }
 
 .heading-question {
-    position: relative;
     /* background-color: aquamarine; */
 }
 
@@ -236,7 +235,7 @@
 }
 
 #home__my-info.active {
-    padding-top: 15rem;
+    padding-top: 16rem;
 }
 
 .my-infor__img {
@@ -295,7 +294,6 @@
 .my-infor__dis {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 3rem;
 }
 
 .my-infor__dis .infor-item {
@@ -316,7 +314,6 @@
     display: block;
     margin-left: 15%;
     font-weight: 400;
-    /* color: rgba(255, 255, 255, .5); */
     color: var(--text-color2);
 }
 

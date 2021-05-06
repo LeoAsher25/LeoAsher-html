@@ -3,8 +3,8 @@
         display: flex;
         flex-direction: column;
         padding-bottom: 3rem;
-        margin-left: 5%;
-        margin-right: 5%;
+        /* margin-left: 5%;
+        margin-right: 5%; */
     }
     .header__nav {
         padding-left: 0;
@@ -20,11 +20,6 @@
 }
 
 @media (max-width:1500px) {
-    .my-infor {
-        padding-bottom: 3rem;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
     .home-section {
         padding-left: 5%;
         padding-right: 5%;
