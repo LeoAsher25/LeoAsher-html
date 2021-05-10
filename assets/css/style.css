@@ -9,7 +9,7 @@
     --corner-color: #fff;
     --scroll-color: #70298E;
     height: 100vh;
-    background: url(../../../common/img/wall.png) no-repeat center;
+    background: url(../../common/img/wall.png) no-repeat center;
     background-size: cover;
     position: relative;
     color: var(--white-color);
