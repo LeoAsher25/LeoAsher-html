@@ -199,6 +199,7 @@
 /*          BODY            */
 
 #body {
+    transition: background-color 1s ease;
     background-color: var(--theme-color);
 }
 

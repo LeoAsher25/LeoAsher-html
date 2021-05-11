@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./assets/css/responesive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <meta property="og:image" content="./assets/img/leo.jpg" />
     <meta property="og:title" content="It's me, Leo Asher" />
     <meta property="og:description" content="Come in to know more about me!" />
@@ -23,7 +22,7 @@
 
 <body>
 
-    <div id="container">
+    <div id="container" class="">
         <div class="header">
             <nav class="header__nav row" id="header__nav">
                 <a href="../index.html" class="header__nav__logo">
@@ -105,23 +104,226 @@
                 </script>
             </nav>
         </div>
-        <div class="container grid">
-            <nav class="navbar">
+        <div class="body-content row">
+            <nav class="sidebar col l-3">
 
             </nav>
-            <div class="body">
-                <section id="slider">
+            <div class="col l-9 m-12 c-12" id="sliderBox">
+                <span class="previous-icon"><i class="fas fa-chevron-circle-left"></i></span>
+                <span class="next-icon"><i class="fas fa-chevron-circle-right"></i></span>
+                <section class="sliders">
+                    <input type="radio" name="slider" id="s0" checked>
                     <input type="radio" name="slider" id="s1">
                     <input type="radio" name="slider" id="s2">
-                    <input type="radio" name="slider" id="s3" checked>
+                    <input type="radio" name="slider" id="s3">
                     <input type="radio" name="slider" id="s4">
                     <input type="radio" name="slider" id="s5">
+                    <input type="radio" name="slider" id="s6">
 
-                    <label for="s1" class="slider" id="slide1">1</label>
-                    <label for="s2" class="slider" id="slide2">2</label>
-                    <label for="s3" class="slider active" id="slide3">3</label>
-                    <label for="s4" class="slider" id="slide4">4</label>
-                    <label for="s5" class="slider" id="slide5">5</label>
+                    <label for="s0" class="slider member-card active" id="slider0">                        
+                        <div class="member-card__ava" >
+                            <div class="member-card__ava__img" style="background-image: url(./assets/img/test/1.jpeg)"></div>
+                            <div class="member-card__name">
+                                <span class="member-card__prefix-name">Mr.</span>
+                                <span class="member-card__full-name">Asher</span>
+                            </div>
+                        </div>  
+                        <div class="member-card__profile">
+                            <div class="member-card__network">
+                                <a href="https://www.facebook.com/LeoAsher25" target="_blank" class="member-card__network__item member-card__network__facebook"  >
+                                    <i class="fab fa-facebook" style="--i: 0.5s"></i>
+                                </a>
+                                <span class="member-card__network__item member-card__network__infor" >
+                                    <i class="fas fa-info-circle" style="--i: 1s"></i>
+                                    <div class="member-card__infor">
+                                        <span class="member-card__infor__full-name">Fullname: <span>Leo Asher</span> </span>
+                                        <span class="member-card__infor__date-of-birth">Date of birth: 
+                                            <span class="member-card__infor__date-of-birth__date">25 /</span>
+                                            <span class="member-card__infor__date-of-birth__month">07 /</span>
+                                            <span class="member-card__infor__date-of-birth__year">2001</span>
+                                        </span>
+                                        <span class="member-card__infor__phone-number">Phone: <span>0342 828 391</span></span>
+                                        <span class="member-card__infor__description">Descript: <span>The most blessed lion</span></span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                                     
+                    </label>
+                    <label for="s1" class="slider member-card" id="slider1">                        
+                        <div class="member-card__ava" >
+                            <div class="member-card__ava__img" style="background-image: url(./assets/img/test/8.jpg)"></div>
+                            <div class="member-card__name">
+                                <span class="member-card__prefix-name">Mr.</span>
+                                <span class="member-card__full-name">Asher</span>
+                            </div>
+                        </div>
+                        <div class="member-card__profile">
+                            <div class="member-card__network">
+                                <a href="https://www.facebook.com/LeoAsher25" target="_blank" class="member-card__network__item member-card__network__facebook"  >
+                                    <i class="fab fa-facebook" style="--i: 0.5s"></i>
+                                </a>
+                                <span class="member-card__network__item member-card__network__infor" >
+                                    <i class="fas fa-info-circle" style="--i: 1s"></i>
+                                    <div class="member-card__infor">
+                                        <span class="member-card__infor__full-name">Fullname: <span>Leo Asher</span> </span>
+                                        <span class="member-card__infor__date-of-birth">Date of birth: 
+                                            <span class="member-card__infor__date-of-birth__date">25 /</span>
+                                            <span class="member-card__infor__date-of-birth__month">07 /</span>
+                                            <span class="member-card__infor__date-of-birth__year">2001</span>
+                                        </span>
+                                        <span class="member-card__infor__phone-number">Phone: <span>0342 828 391</span></span>
+                                        <span class="member-card__infor__description">Descript: <span>The most blessed lion</span></span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="s2" class="slider member-card" id="slider2">                        
+                        <div class="member-card__ava" >
+                            <div class="member-card__ava__img" style="background-image: url(./assets/img/test/3.jpeg)"></div>
+                            <div class="member-card__name">
+                                <span class="member-card__prefix-name">Mr.</span>
+                                <span class="member-card__full-name">Asher</span>
+                            </div>
+                        </div>
+                        <div class="member-card__profile">
+                            <div class="member-card__network">
+                                <a href="https://www.facebook.com/LeoAsher25" target="_blank" class="member-card__network__item member-card__network__facebook"  >
+                                    <i class="fab fa-facebook" style="--i: 0.5s"></i>
+                                </a>
+                                <span class="member-card__network__item member-card__network__infor" >
+                                    <i class="fas fa-info-circle" style="--i: 1s"></i>
+                                    <div class="member-card__infor">
+                                        <span class="member-card__infor__full-name">Fullname: <span>Leo Asher</span> </span>
+                                        <span class="member-card__infor__date-of-birth">Date of birth: 
+                                            <span class="member-card__infor__date-of-birth__date">25 /</span>
+                                            <span class="member-card__infor__date-of-birth__month">07 /</span>
+                                            <span class="member-card__infor__date-of-birth__year">2001</span>
+                                        </span>
+                                        <span class="member-card__infor__phone-number">Phone: <span>0342 828 391</span></span>
+                                        <span class="member-card__infor__description">Descript: <span>The most blessed lion</span></span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="s3" class="slider member-card" id="slider3">                        
+                        <div class="member-card__ava" >
+                            <div class="member-card__ava__img" style="background-image: url(./assets/img/test/4.png)"></div>
+                            <div class="member-card__name">
+                                <span class="member-card__prefix-name">Mr.</span>
+                                <span class="member-card__full-name">Asher</span>
+                            </div>
+                        </div>
+                        <div class="member-card__profile">
+                            <div class="member-card__network">
+                                <a href="https://www.facebook.com/LeoAsher25" target="_blank" class="member-card__network__item member-card__network__facebook"  >
+                                    <i class="fab fa-facebook" style="--i: 0.5s"></i>
+                                </a>
+                                <span class="member-card__network__item member-card__network__infor" >
+                                    <i class="fas fa-info-circle" style="--i: 1s"></i>
+                                    <div class="member-card__infor">
+                                        <span class="member-card__infor__full-name">Fullname: <span>Leo Asher</span> </span>
+                                        <span class="member-card__infor__date-of-birth">Date of birth: 
+                                            <span class="member-card__infor__date-of-birth__date">25 /</span>
+                                            <span class="member-card__infor__date-of-birth__month">07 /</span>
+                                            <span class="member-card__infor__date-of-birth__year">2001</span>
+                                        </span>
+                                        <span class="member-card__infor__phone-number">Phone: <span>0342 828 391</span></span>
+                                        <span class="member-card__infor__description">Descript: <span>The most blessed lion</span></span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="s4" class="slider member-card" id="slider4">                        
+                        <div class="member-card__ava" >
+                            <div class="member-card__ava__img" style="background-image: url(./assets/img/test/9.jpg)"></div>
+                            <div class="member-card__name">
+                                <span class="member-card__prefix-name">Mr.</span>
+                                <span class="member-card__full-name">Asher</span>
+                            </div>
+                        </div>
+                        <div class="member-card__profile">
+                            <div class="member-card__network">
+                                <a href="https://www.facebook.com/LeoAsher25" target="_blank" class="member-card__network__item member-card__network__facebook"  >
+                                    <i class="fab fa-facebook" style="--i: 0.5s"></i>
+                                </a>
+                                <span class="member-card__network__item member-card__network__infor" >
+                                    <i class="fas fa-info-circle" style="--i: 1s"></i>
+                                    <div class="member-card__infor">
+                                        <span class="member-card__infor__full-name">Fullname: <span>Leo Asher</span> </span>
+                                        <span class="member-card__infor__date-of-birth">Date of birth: 
+                                            <span class="member-card__infor__date-of-birth__date">25 /</span>
+                                            <span class="member-card__infor__date-of-birth__month">07 /</span>
+                                            <span class="member-card__infor__date-of-birth__year">2001</span>
+                                        </span>
+                                        <span class="member-card__infor__phone-number">Phone: <span>0342 828 391</span></span>
+                                        <span class="member-card__infor__description">Descript: <span>The most blessed lion</span></span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="s5" class="slider member-card" id="slider5">                        
+                        <div class="member-card__ava" >
+                            <div class="member-card__ava__img" style="background-image: url(./assets/img/test/6.png)"></div>
+                            <div class="member-card__name">
+                                <span class="member-card__prefix-name">Mr.</span>
+                                <span class="member-card__full-name">Asher</span>
+                            </div>
+                        </div>
+                        <div class="member-card__profile">
+                            <div class="member-card__network">
+                                <a href="https://www.facebook.com/LeoAsher25" target="_blank" class="member-card__network__item member-card__network__facebook"  >
+                                    <i class="fab fa-facebook" style="--i: 0.5s"></i>
+                                </a>
+                                <span class="member-card__network__item member-card__network__infor" >
+                                    <i class="fas fa-info-circle" style="--i: 1s"></i>
+                                    <div class="member-card__infor">
+                                        <span class="member-card__infor__full-name">Fullname: <span>Leo Asher</span> </span>
+                                        <span class="member-card__infor__date-of-birth">Date of birth: 
+                                            <span class="member-card__infor__date-of-birth__date">25 /</span>
+                                            <span class="member-card__infor__date-of-birth__month">07 /</span>
+                                            <span class="member-card__infor__date-of-birth__year">2001</span>
+                                        </span>
+                                        <span class="member-card__infor__phone-number">Phone: <span>0342 828 391</span></span>
+                                        <span class="member-card__infor__description">Descript: <span>The most blessed lion</span></span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="s6" class="slider member-card" id="slider6">                        
+                        <div class="member-card__ava" >
+                            <div class="member-card__ava__img" style="background-image: url(./assets/img/test/7.jpeg)"></div>
+                            <div class="member-card__name">
+                                <span class="member-card__prefix-name">Mr.</span>
+                                <span class="member-card__full-name">Asher</span>
+                            </div>
+                        </div>
+                        <div class="member-card__profile">
+                            <div class="member-card__network">
+                                <a href="https://www.facebook.com/LeoAsher25" target="_blank" class="member-card__network__item member-card__network__facebook"  >
+                                    <i class="fab fa-facebook" style="--i: 0.5s"></i>
+                                </a>
+                                <span class="member-card__network__item member-card__network__infor" >
+                                    <i class="fas fa-info-circle" style="--i: 1s"></i>
+                                    <div class="member-card__infor">
+                                        <span class="member-card__infor__full-name">Fullname: <span>Leo Asher</span> </span>
+                                        <span class="member-card__infor__date-of-birth">Date of birth: 
+                                            <span class="member-card__infor__date-of-birth__date">25 /</span>
+                                            <span class="member-card__infor__date-of-birth__month">07 /</span>
+                                            <span class="member-card__infor__date-of-birth__year">2001</span>
+                                        </span>
+                                        <span class="member-card__infor__phone-number">Phone: <span>0342 828 391</span></span>
+                                        <span class="member-card__infor__description">Descript: <span>The most blessed lion</span></span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </label>
                 </section>
             </div>
         </div>
