@@ -35,6 +35,9 @@
     .member-card__network__item i {
         font-size: 3.5rem;
     }
+    .member-card__infor {
+        left: -7rem;
+    }
 }
 
 @media (min-width: 741px) and (max-width: 1023x) {
