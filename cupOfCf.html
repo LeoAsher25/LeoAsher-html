@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cup a Coffee</title>
+
+    <style>
+        body {
+            height: 100vh;
+            background-color: #00002f;
+            display: flex;
+        }
+        
+        .container {
+            margin: auto;
+            /* transform: scale(.2); */
+        }
+        
+        .cup {
+            position: relative;
+            width: 250px;
+            height: 200px;
+            background-color: #fafafa;
+            background: linear-gradient(to right, #fafafa, #cacaca);
+            border-bottom-left-radius: 35%;
+            border-bottom-right-radius: 35%;
+            /* z-index: 1; */
+        }
+        
+        .top {
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            top: -30px;
+            border-radius: 50%;
+            background: linear-gradient(to right, #fafafa, #cacaca);
+        }
+        
+        .circle {
+            --width-top: 94%;
+            position: absolute;
+            width: var(--width-top);
+            left: calc((100% - var(--width-top))/2);
+            top: calc((100% - var(--width-top)));
+            border-radius: 50%;
+            height: 100%;
+            overflow: hidden;
+            background: linear-gradient(to left, #fafafa, #cacaca);
+        }
+        
+        .coffee {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 20px;
+            background: linear-gradient(#CB6C4B, #df7958);
+            border-radius: 50%;
+        }
+        
+        .logo {
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            width: 50%;
+        }
+        
+        .logo img {
+            width: 100%;
+        }
+        
+        .handle {
+            position: absolute;
+            right: -50px;
+            top: 20px;
+            width: 110px;
+            height: 120px;
+            border: 20px solid #cacaca;
+            border-left: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-radius: 50%;
+            transform: rotate(40deg);
+            box-sizing: border-box;
+        }
+        
+        .plate {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 30%);
+            width: 500px;
+            height: 200px;
+            background: linear-gradient(to right, #fafafa, #eaeaea);
+            border-radius: 50%;
+            box-shadow: 0 35px 35px rgba(0, 0, 0, .2);
+        }
+        
+        .plate::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            border-radius: 50%;
+            background: linear-gradient(to left, #fafafa, #dedede);
+        }
+        
+        .plate::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            bottom: 30px;
+            right: 30px;
+            border-radius: 50%;
+            background: radial-gradient(rgba(0, 0, 0, .3) 25%, transparent, transparent);
+        }
+        
+        .vapour {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
+            padding: 0 20px;
+        }
+        
+        .vapour span {
+            position: relative;
+            bottom: 50px;
+            min-width: 8px;
+            height: 120px;
+            background: #fff;
+            border-radius: 50%;
+            opacity: 0;
+            animation: animate 5s linear infinite;
+            filter: blur(10px);
+            animation-delay: calc(var(--i) * -0.5s);
+        }
+        
+        @keyframes animate {
+            0% {
+                transform: translateY(30px) scaleX(1);
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-150px) scaleX(5);
+            }
+            90% {
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(-300px) scaleX(10);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="plate">
+
+        </div>
+        <div class="cup">
+            <div class="top">
+                <div class="vapour">
+                    <span style="--i:1;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:4;"></span>
+                    <span style="--i:5;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:7;"></span>
+                    <span style="--i:8;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:3;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:9;"></span>
+                    <span style="--i:19;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:6;"></span>
+                </div>
+                <div class="circle">
+                    <div class="coffee">
+
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="./assets/img/logo1.png" alt="">
+                </div>
+            </div>
+            <div class="handle">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
