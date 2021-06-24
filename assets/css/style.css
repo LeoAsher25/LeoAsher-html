@@ -1,5 +1,7 @@
 #header {
     margin-top: 0;
+    background: url(../img/wall.png) no-repeat center;
+    background-size: cover;
 }
 
 .header__intro {
@@ -9,11 +11,10 @@
     --corner-color: #fff;
     --scroll-color: #70298E;
     height: 100vh;
-    background: url(../../common/img/wall.png) no-repeat center;
-    background-size: cover;
     position: relative;
     color: var(--white-color);
     padding-top: 5rem;
+    z-index: 1;
 }
 
 
@@ -74,6 +75,7 @@
     margin: auto;
     position: absolute;
     left: 50%;
+    top: 10rem;
     transform: translate(-50%, 0);
     text-align: center;
 }
@@ -192,6 +194,30 @@
         top: 1rem;
         opacity: 0;
         filter: brightness(0%);
+    }
+}
+
+.header__intro__logo {
+    position: absolute;
+    max-width: 30rem;
+    top: -30rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .header__intro__content {
+        /* top: 10rem;  */
+    }
+    .header__intro__title {
+        font-size: 3rem;
+    }
+    .header__intro__disc {
+        font: 1.5rem;
+    }
+    .header__intro__logo {
+        max-width: 25rem;
+        top: -25rem;
     }
 }
 
@@ -318,13 +344,6 @@
     color: var(--text-color2);
 }
 
-.contact-me.btn {
-    margin-top: 2rem;
-    margin-left: 2rem;
-    width: 30%;
-    min-width: 12rem;
-}
-
 
 /*          My Hobbies          */
 
@@ -338,6 +357,7 @@
 
 .my-hobbies__list {
     display: flex;
+    padding: 0;
 }
 
 .my-hobbies__item {
@@ -467,13 +487,6 @@
     width: 100%;
     margin: 2rem auto;
     border-radius: 1rem;
-    outline: none;
-    border: .1rem solid rgba(255, 255, 255, .3);
-}
-
-.contact-form .btn:hover {
-    color: var(--btn-color);
-    background-color: rgba(255, 255, 255, .05);
 }
 
 

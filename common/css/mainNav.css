@@ -5,14 +5,9 @@
     box-shadow: 0 10px 10px 1px rgba(0, 0, 0, .4);
     position: relative;
     overflow-y: hidden;
-}
-
-.header__nav.active {
-    position: fixed;
+    position: sticky;
     top: 0;
-    right: 0;
-    left: 0;
-    z-index: 2;
+    z-index: 10;
 }
 
 .header__nav::before {
@@ -36,6 +31,7 @@
 .header__nav__logo-title {
     margin-left: 1rem;
     font-size: 3rem;
+    line-height: 3.5rem;
     font-weight: 600;
     color: #fff;
 }
@@ -201,7 +197,7 @@
     transition: transform .5s;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .header__nav {
         padding-left: 0;
         padding-right: 0;
@@ -209,9 +205,12 @@
     .header__nav__menu {
         display: none;
     }
+    .header__nav--respon {
+        display: block;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .header__nav--respon {
         display: none;
     }
