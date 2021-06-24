@@ -40,15 +40,16 @@
     }
     .header__intro__title span {
         font-size: 4rem;
+        user-select: none;
     }
     .header__intro__disc span {
         font-size: 1.5rem;
     }
     .header__intro__logo {
-        --size-img: 25rem;
+        --size-img: 30rem;
     }
     .header__intro__logo:hover {
-        --size-img: 27rem;
+        --size-img: 35rem;
     }
     .my-infor-heading {
         margin-top: 5rem;
@@ -70,5 +71,48 @@
     }
     .header__intro__logo:hover {
         --size-img: 22rem;
+    }
+}
+
+
+/* @media (max-width:800px) and (min-height: 1200px) {
+    .header__intro__content {
+        top: 15rem;
+    }
+    .header__intro__title span {
+        font-size: 5rem;
+    }
+    .header__intro__disc span {
+        font-size: 3rem;
+    }
+    .header__intro__logo {
+        --size-img: 30rem;
+        top: -40rem;
+    }
+    .header__intro__logo:hover {
+        --size-img: 27rem;
+    }
+} */
+
+@media (min-height: 1200px) {
+    .header__intro__content {
+        top: 15rem;
+    }
+    .header__intro__title span {
+        font-size: 5rem;
+    }
+    .header__intro__disc span {
+        font-size: 3rem;
+    }
+    .header__intro__scroll {
+        bottom: 10rem;
+        /* transform: scale(1.5); */
+    }
+    .header__intro__logo {
+        --size-img: 35rem;
+        top: -45rem;
+    }
+    .header__intro__logo:hover {
+        --size-img: 40rem;
     }
 }
