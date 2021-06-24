@@ -94,7 +94,7 @@
     }
 } */
 
-@media (min-height: 1200px) {
+@media (min-height: 1400px) {
     .header__intro__content {
         top: 15rem;
     }
@@ -105,12 +105,12 @@
         font-size: 3rem;
     }
     .header__intro__scroll {
-        bottom: 10rem;
+        bottom: 18rem;
         /* transform: scale(1.5); */
     }
     .header__intro__logo {
         --size-img: 35rem;
-        top: -45rem;
+        top: -55rem;
     }
     .header__intro__logo:hover {
         --size-img: 40rem;
