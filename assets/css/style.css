@@ -96,6 +96,7 @@
     color: var(--light-text-color1);
     margin-bottom: 1rem;
     transition: .3s;
+    user-select: none;
 }
 
 .header__intro__title span:hover {
