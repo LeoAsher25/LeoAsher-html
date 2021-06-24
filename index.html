@@ -50,7 +50,25 @@
                 </div>
                 <div class="header__intro__content">
                     <div class="header__intro__title">
-                        Hi, I'm Leo Asher
+                        <div class="header__intro__text">
+                            <span>H</span>
+                            <span>i</span>
+                            <span>,&ThickSpace;</span>
+                            <span>I</span>
+                            <span>'</span>
+                            <span>m&ThickSpace;</span>
+                        </div>
+                        <div class="header__intro__text">
+                            <span style="color: #0000ff;">L</span>
+                            <span>e</span>
+                            <span>o&ThickSpace;</span>
+                            <span style="color: #ff0000;">A</span>
+                            <span>s</span>
+                            <span>h</span>
+                            <span>e</span>
+                            <span>r</span>
+                        </div>
+
                     </div>
                     <div class="header__intro__disc">
                         <span class="typing"></span>
@@ -72,8 +90,7 @@
                         <span style="--i: .4s"></span>
                     </a>
                     <img class="header__intro__logo" src="./assets/img/logo.png" alt="">
-                    <!-- <div class="header__intro__logo" style="width: 100%; position: relative; background-color: aqua; display: flex; justify-content: center;  border: 1px solid red">
-                    </div> -->
+
                 </div>
 
             </div>
@@ -136,10 +153,29 @@
                 <a href="#my-hobbies" class="header__nav__item"><span>Hobbies</span></a>
                 <a href="./myFamily/myFamily.html" class="header__nav__item"><span>Family</span></a>
                 <a href="#" class="header__nav__item"><span>Images</span></a>
-                <a href="#" class="header__nav__item dark-mode"><span>Dark Mode</span></a>
+                <a href="" class="header__nav__item dark-mode"><span>Dark Mode</span></a>
                 <!-- <a href="#contact" class="header__nav__item"><span>Contact</span></a> -->
             </div>
 
+            <script type="text/javascript">
+                let Container = document.querySelector('#container')
+                let darkModeBtnNodes = document.querySelectorAll('.dark-mode');
+                console.log(darkModeBtnNodes)
+                let darkModeBtns = Array(...darkModeBtnNodes);
+                console.log(darkModeBtns);
+                darkModeBtns.forEach(darkModeBtn => {
+                    darkModeBtn.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        Container.classList.toggle("dark-theme");
+                        let textNodeMode = darkModeBtn.querySelector("span");
+                        if (Container.classList.contains("dark-theme")) {
+                            textNodeMode.innerHTML = "Light Mode";
+                        } else {
+                            textNodeMode.innerHTML = "Dark Mode";
+                        }
+                    });
+                })
+            </script>
         </nav>
 
         <div id="body">

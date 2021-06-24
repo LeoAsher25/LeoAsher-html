@@ -1,4 +1,4 @@
-@media (max-width:1200px) {
+@media (max-width:1199px) {
     .my-infor {
         display: flex;
         flex-direction: column;
@@ -19,14 +19,14 @@
     }
 }
 
-@media (max-width:1400px) {
+@media (max-width:1399px) {
     .home-section {
         padding-left: 5%;
         padding-right: 5%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .my-infor {
         margin-left: 2%;
         margin-right: 2%;
@@ -34,5 +34,41 @@
     .home-section {
         padding-left: 2%;
         padding-right: 2%;
+    }
+    .header__intro__content {
+        /* top: 10rem;  */
+    }
+    .header__intro__title span {
+        font-size: 4rem;
+    }
+    .header__intro__disc span {
+        font-size: 1.5rem;
+    }
+    .header__intro__logo {
+        --size-img: 25rem;
+    }
+    .header__intro__logo:hover {
+        --size-img: 27rem;
+    }
+    .my-infor-heading {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .header__intro__content {
+        top: 8rem;
+    }
+    .header__intro__title span {
+        font-size: 3rem;
+    }
+    .header__intro__disc span {
+        font-size: 1.5rem;
+    }
+    .header__intro__logo {
+        --size-img: 20rem;
+    }
+    .header__intro__logo:hover {
+        --size-img: 22rem;
     }
 }
