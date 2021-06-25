@@ -163,7 +163,7 @@
     display: block;
     height: 10rem;
     position: relative;
-    --scroll-width: 5rem;
+    --scroll-width: 4rem;
     width: var(--scroll-width);
     left: 50%;
     bottom: 5rem;
@@ -220,7 +220,7 @@
     --size-img: 30rem;
     position: absolute;
     max-width: var(--size-img);
-    top: calc(0rem - 3rem - var(--size-img));
+    top: calc(0rem - 5rem - var(--size-img));
     left: 50%;
     transform: translateX(-50%);
     transition: all .5s;
