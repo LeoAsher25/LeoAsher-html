@@ -219,7 +219,8 @@
 .header__intro__logo {
     --size-img: 30rem;
     position: absolute;
-    max-width: var(--size-img);
+    width: var(--size-img);
+    /* max-width: var(--size-img); */
     top: calc(0rem - 5rem - var(--size-img));
     left: 50%;
     transform: translateX(-50%);
