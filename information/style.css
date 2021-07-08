@@ -1,0 +1,191 @@
+:root {
+    --btn-color: #7000aa;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(209, 229, 255);
+}
+
+.container {
+    width: 500px;
+    max-width: 95%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+section {
+    border-radius: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 1rem 1rem 3rem .5rem rgba(0, 0, 0, .2);
+}
+
+section+section {
+    margin-top: 5rem;
+}
+
+.infor {}
+
+.infor .ava {
+    --dimention: 20rem;
+    width: var(--dimention);
+    height: var(--dimention);
+    border-radius: 50%;
+    box-shadow: .5rem .5rem 1rem .1rem rgba(0, 0, 0, .3);
+    overflow: hidden;
+    background: url(../assets/img/leo1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.my-infor__content {
+    position: relative;
+    width: 95%;
+    text-align: center;
+}
+
+.home-section-heading {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 4rem;
+    color: var(--btn-color);
+    position: relative;
+    /* transform: translateY(-10rem);
+    opacity: 0; */
+    transition-property: tranform opacity;
+    transition-duration: 1s;
+}
+
+.my-infor__dis {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.my-infor__col {
+    flex: 1;
+    text-align: left;
+}
+
+.infor-item {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    position: relative;
+    transition: 1.5s;
+    transition-delay: calc(var(--i) * .1s);
+}
+
+.infor-item.showLeft {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.my-infor__dis .infor-item i {
+    color: var(--btn-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.my-infor__dis .infor-item span {
+    display: block;
+    margin-left: 15%;
+    font-weight: 600;
+    color: #444;
+}
+
+.contact-me.showZoom {
+    opacity: 1;
+    transform: scale(.9);
+}
+
+@media (max-width: 575px) {
+    html {
+        font-size: 60%;
+    }
+    .my-infor__dis {
+        margin-left: 1.5rem;
+    }
+}
+
+.socials .home-section-heading {
+    margin-top: 0;
+}
+
+.socials-list {
+    width: 80%;
+}
+
+.socials-item {
+    position: relative;
+    display: block;
+    height: 6rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    box-shadow: .3rem .3rem 1.6rem .3rem rgba(0, 0, 0, .2);
+    transition: .3s;
+}
+
+.socials-item:hover {
+    transform: scale(1.05);
+    box-shadow: .3rem 1rem 1rem .3rem rgba(0, 0, 0, .2);
+}
+
+.socials-item i {
+    position: absolute;
+    left: 32%;
+}
+
+.socials-item span {
+    position: absolute;
+    left: 45%;
+    /* margin-left: 4rem; */
+}
+
+.socials-item.fanpage {
+    background: linear-gradient(to right, #E96E2B, #e23a15)
+}
+
+.socials-item.insta {
+    background: linear-gradient( 90deg, rgb(226, 168, 60) 0%, rgba(211, 22, 83, 1) 40%, rgba(94, 35, 201, 1) 100%);
+}
+
+.socials-item.web {
+    background-color: #60AFED;
+}
+
+.socials-item.fb {
+    background-color: #3D62A1;
+}
+
+.socials-item.github {
+    background-color: #161414;
+}

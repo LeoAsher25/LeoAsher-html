@@ -5,209 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="icon" type="image/png" href="../common/img/logo.png">
-    <meta property="og:image" content="../assets/img/leo.jpg" />
-    <meta property="og:title" content="It's me, Leo Asher" />
-    <meta property="og:description" content="Come in to know more about me!" />
-    <title>Leo Asher</title>
-    <style>
-        * {
-            -webkit-tap-highlight-color: transparent;
-            padding: 0;
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            color: #fff;
-        }
-        
-        html {
-            font-size: 62.5%;
-        }
-        
-        body {
-            overflow: hidden;
-        }
-        
-        .container {
-            background: linear-gradient(#fc60a4, #a72ffc);
-            width: 100vw;
-            height: 100vh;
-            padding-top: 5vh;
-            position: relative;
-        }
-        
-        .header {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            user-select: none;
-        }
-        
-        .logo {
-            --dimension: 150px;
-            width: var(--dimension);
-            height: var(--dimension);
-            overflow: hidden;
-            border-radius: 50%;
-            margin-bottom: 1.5rem;
-            cursor: pointer;
-            transition: transform .3s;
-            box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
-        }
-        
-        .logo img {
-            object-fit: cover;
-            height: 100%;
-        }
-        
-        .logo:hover {
-            transform: scale(1.2);
-        }
-        
-        .title {
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-        
-        .descript {
-            font-size: 1.6rem;
-        }
-        
-        .body {}
-        
-        .infor-list {
-            margin-top: 5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            list-style-type: none;
-        }
-        
-        .infor-item {
-            border: 2px solid #fff;
-            width: 50rem;
-            height: 5rem;
-            line-height: 5rem;
-            font-size: 1.8rem;
-            font-weight: 500;
-            text-align: center;
-            position: relative;
-        }
-        
-        .infor-item:hover * {
-            background-color: #fff;
-            color: #D74BCB;
-            border-color: #D74BCB;
-        }
-        
-        .infor-item a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            text-decoration: none;
-        }
-        
-        .infor-item i {
-            position: absolute;
-            left: 1.5rem;
-            font-size: 3rem;
-            margin-right: 1rem;
-        }
-        
-        .infor-item+.infor-item {
-            margin-top: 2rem;
-        }
-        
-        .footer {
-            position: absolute;
-            bottom: 10rem;
-            display: flex;
-            width: 100%;
-        }
-        
-        .wrap {
-            display: flex;
-            margin: auto;
-        }
-        
-        .footer img {
-            width: 5rem;
-        }
-        
-        .footer span {
-            margin-left: 1rem;
-            line-height: 5rem;
-            font-size: 3rem;
-            color: #ffffef;
-            font-weight: 500;
-        }
-        
-        @media (max-width: 576px) {
-            .body {
-                padding-left: 3rem;
-                padding-right: 3rem;
-            }
-            .infor-item {
-                width: 100%;
-            }
-            .footer {
-                bottom: 7rem;
-            }
-        }
-    </style>
+    <meta property="og:image" content="../assets/img/leo1.jpg">
+    <meta property="og:title" content="It's me, Leo Asher">
+    <meta property="og:description" content="Click to know more about me!">
+    <link rel="stylesheet" href="style.css">
+    <title>Nguyễn (Leo Asher) Văn Hậu</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="./infoLogo.jpg" alt="">
+    <main class="container">
+
+        <section class="infor">
+            <div class="ava">
+                <!-- <img src="../assets/img/leo1.jpg" alt=""> -->
             </div>
-            <div class="description">
-                <div class="title">
-                    <span>Nguyễn Văn Hậu</span>
+            <div class="my-infor__content">
+                <h2 class="home-section-heading my-infor-heading">
+                    About me
+                </h2>
+                <div class="my-infor__dis">
+                    <div class="my-infor__col">
+                        <div style="--i : 0" class="infor-item"> <i class="far fa-dot-circle"></i>Fullname: <span>Nguyễn Văn Hậu</span> </div>
+                        <div style="--i : 1" class="infor-item"> <i class="far fa-dot-circle"></i>Nickname: <span>Leo Asher</span></div>
+                        <div style="--i : 2" class="infor-item"> <i class="far fa-dot-circle"></i>Birthday: <span>2001</span> </div>
+                    </div>
+                    <div class="my-infor__col">
+                        <div style="--i : 6" class="infor-item"> <i class="far fa-dot-circle"></i>Job: <span>Student</span></div>
+                        <div style="--i : 6" class="infor-item"> <i class="far fa-dot-circle"></i>School: <span>PTIT</span></div>
+                        <div style="--i : 7" class="infor-item"> <i class="far fa-dot-circle"></i>Hometown: <span>Kim Sơn, Ninh Bình</span> </div>
+                    </div>
                 </div>
-                <div class="descript">
-                    <span>Let's live as a bad boy, because he loves himself most 😜!</span>
-                </div>
             </div>
-        </div>
-        <div class="body">
-            <ul class="infor-list">
-                <li class="infor-item">
-                    <a href="https://www.facebook.com/LeoAsher25">
-                        <i class="bi bi-facebook"></i>
-                        <span>Facebook cá nhân</span>
-                    </a>
-                </li>
-                <li class="infor-item">
-                    <a href="https://www.facebook.com/leosan.cf">
-                        <i class="bi bi-facebook"></i>
-                        <span>Fanpage Leo Asher</span>
-                    </a>
-                </li>
-                <li class="infor-item">
-                    <a href="http://leosan.cf/">
-                        <i class="bi bi-globe2"></i>
-                        <span>Website cá nhân</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer">
-            <div class="wrap">
-                <img src="../assets/img/logo.png" alt="">
-                <span>Leo Asher</span>
+        </section>
+
+        <section class="socials">
+            <h3 class="home-section-heading">
+                Socials
+            </h3>
+            <div class="socials-list">
+                <a href="" class="socials-item fanpage">
+                    <i class="far fa-flag"></i>
+                    <span>Fanpage</span>
+                </a>
+                <a href="" class="socials-item insta">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="" class="socials-item web">
+                    <i class="fas fa-globe"></i>
+                    <span>Website</span>
+                </a>
+                <a href="" class="socials-item fb">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="" class="socials-item github">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+    <script></script>
 </body>
 
 </html>
